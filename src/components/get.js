@@ -22,7 +22,7 @@ const showSpecificWaifu = async (req, res) => {
       .status(400)
       .json({ mensagem: "This character still not has in your list" });
   }
-  return res.json(waifu);
+  return res.json(waifu)
 };
 module.exports = {
   showWaifus,
